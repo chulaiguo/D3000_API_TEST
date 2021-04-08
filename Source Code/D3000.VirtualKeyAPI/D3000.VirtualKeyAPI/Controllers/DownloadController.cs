@@ -1,9 +1,9 @@
 ﻿using System.IO;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
 
-namespace D3000.WebAPI.Controllers
+namespace D3000.VirtualKeyAPI.Controllers
 {
 	[Route("api/[controller]/[action]")]
 	[ApiController]

@@ -10,7 +10,7 @@ namespace D3000.VirtualKeyAPI.Controllers
 	public class BizBuildingController : ControllerBase
 	{
 		[HttpPost]
-		public IActionResult GetBuildingList()
+		public IActionResult GetAllList()
 		{
 			var __authorization__ = this.Request.Headers["Authorization"];
 
@@ -20,8 +20,59 @@ namespace D3000.VirtualKeyAPI.Controllers
 				__options__ = reader.ReadToEndAsync().Result;
 			}
 
-			string __json__ = new BizBuilding().GetBuildingList(__authorization__, __options__);
-			return Content(__json__, "application/json", Encoding.UTF8);
+			return Ok(new BizBuilding().GetAllList(__authorization__, __options__));
+		}
+		[HttpPost]
+		public IActionResult GetByAddress()
+		{
+			var __authorization__ = this.Request.Headers["Authorization"];
+
+			string __options__;
+			using (var reader = new StreamReader(this.Request.Body))
+			{
+				__options__ = reader.ReadToEndAsync().Result;
+			}
+
+			return Ok(new BizBuilding().GetByAddress(__authorization__, __options__));
+		}
+		[HttpPost]
+		public IActionResult Insert()
+		{
+			var __authorization__ = this.Request.Headers["Authorization"];
+
+			string __options__;
+			using (var reader = new StreamReader(this.Request.Body))
+			{
+				__options__ = reader.ReadToEndAsync().Result;
+			}
+
+			return Ok(new BizBuilding().Insert(__authorization__, __options__));
+		}
+		[HttpPost]
+		public IActionResult InsertWithChildren()
+		{
+			var __authorization__ = this.Request.Headers["Authorization"];
+
+			string __options__;
+			using (var reader = new StreamReader(this.Request.Body))
+			{
+				__options__ = reader.ReadToEndAsync().Result;
+			}
+
+			return Ok(new BizBuilding().InsertWithChildren(__authorization__, __options__));
+		}
+		[HttpPost]
+		public IActionResult Update()
+		{
+			var __authorization__ = this.Request.Headers["Authorization"];
+
+			string __options__;
+			using (var reader = new StreamReader(this.Request.Body))
+			{
+				__options__ = reader.ReadToEndAsync().Result;
+			}
+
+			return Ok(new BizBuilding().Update(__authorization__, __options__));
 		}
 	}
 

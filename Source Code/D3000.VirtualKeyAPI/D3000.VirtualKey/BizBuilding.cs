@@ -11,7 +11,7 @@ namespace D3000.VirtualKey
 {
     public class BizBuilding : BizBase
     {
-        public string GetBuildingList(string authorization, string options)
+        public object GetAllList(string authorization, string options)
         {
             try
             {
@@ -37,54 +37,272 @@ namespace D3000.VirtualKey
                         }
                     };
 
-                    return JsonConvert.SerializeObject(new { inputType, outputType });
+                    return new { inputType, outputType };
                 }
 
                 //var input = JsonConvert.DeserializeAnonymousType(options, inputType);
                 SecurityToken token = new SecurityToken("admin");
-                //BDBuildingDataCollection list = BDBuildingWrapper.GetAll(token);
-
-                //List<DbParameter> paras = new List<DbParameter>();
-                //BDBuildingWrapper.AddParameter(paras, string.Format("@{0}", BDBuildingSchema.Address1),
-                //    DbType.String, "");
-
-                //string where = "";
-                //list = BDBuildingWrapper.GetCollection(where, paras, token);
 
                 string sql = string.Format("SELECT [{1}], [{2}] FROM [{0}]",
                     BDBuildingSchema.TableName, BDBuildingSchema.BDBuildingPK, BDBuildingSchema.Address1);
-                //List<object> list = BDBuildingWrapper.ExecuteList<object>(sql, null, record =>
-                //{
-                //    return new
-                //    {
-                //        pk = record.GetNextGuid(),
-                //        addrrss = record.GetNextString()
-                //    };
-                //}, token);
+                List<object> list = BDBuildingWrapper.ExecuteList<object>(sql, null, record =>
+                {
+                    return new
+                    {
+                        pk = record.GetNextGuid(),
+                        address = record.GetNextString()
+                    };
+                }, token);
 
-                //string json = JsonConvert.SerializeObject(list);
-
-                string json = BDBuildingWrapper.ExecuteJson(sql, null, token);
-
-                //List<object> retList = new List<object>();
-                //foreach (BDBuildingData item in list)
-                //{
-                //    retList.Add(new
-                //    {
-                //        pk = item.BDBuildingPK,
-                //        address = item.Address1
-                //    });
-                //}
-
-                var retEntity = new
+                return new
                 {
                     ok = true,
                     message = "OK",
 
-                    result = json
+                    result = list
+                };
+            }
+            catch (Exception ex)
+            {
+                return this.ToJsonError(ex.Message);
+            }
+        }
+
+        public object GetByAddress(string authorization, string options)
+        {
+            try
+            {
+                var inputType = new
+                {
+                    address = ""
                 };
 
-                return JsonConvert.SerializeObject(retEntity);
+                //<ts-auto-generated>
+                if (string.IsNullOrEmpty(authorization) && string.IsNullOrEmpty(options))
+                {
+                    var outputType = new
+                    {
+                        ok = false,
+                        message = "",
+
+                        result = new[]
+                        {
+                            new
+                            {
+                                pk = "00000000-0000-0000-0000-000000000000",
+                                address = ""
+                            }
+                        }
+                    };
+
+                    return new { inputType, outputType };
+                }
+
+                var input = JsonConvert.DeserializeAnonymousType(options, inputType);
+                SecurityToken token = new SecurityToken("admin");
+                
+                string sql = string.Format("SELECT [{1}], [{2}] FROM [{0}] WHERE [{2}] ILIKE @{2}",
+                    BDBuildingSchema.TableName, BDBuildingSchema.BDBuildingPK, BDBuildingSchema.Address1);
+
+                List<DbParameter> paras = new List<DbParameter>();
+                BDBuildingWrapper.AddParameter(paras, string.Format("@{0}", BDBuildingSchema.Address1),
+                    DbType.String, input.address);
+
+                List<object> list = BDBuildingWrapper.ExecuteList<object>(sql, paras, record =>
+                {
+                    return new
+                    {
+                        pk = record.GetNextGuid(),
+                        address = record.GetNextString()
+                    };
+                }, token);
+
+                return new
+                {
+                    ok = true,
+                    message = "OK",
+
+                    result = list
+                };
+            }
+            catch (Exception ex)
+            {
+                return this.ToJsonError(ex.Message);
+            }
+        }
+
+        public object Insert(string authorization, string options)
+        {
+            try
+            {
+                var inputType = new
+                {
+                    id = 0,
+                    address = ""
+                };
+
+                //<ts-auto-generated>
+                if (string.IsNullOrEmpty(authorization) && string.IsNullOrEmpty(options))
+                {
+                    var outputType = new
+                    {
+                        ok = false,
+                        message = ""
+                    };
+
+                    return new { inputType, outputType };
+                }
+
+                var input = JsonConvert.DeserializeAnonymousType(options, inputType);
+                SecurityToken token = new SecurityToken("admin");
+
+                BDBuildingData data = new BDBuildingData();
+                data.Address1 = input.address;
+                data.BuildingID = input.id;
+
+                Result result = BDBuildingWrapper.Save(data, token);
+                if (result.OK)
+                {
+                    return new
+                    {
+                        ok = true,
+                        message = "OK"
+                    };
+                }
+
+                return new
+                {
+                    ok = false,
+                    message = result.Error
+                };
+            }
+            catch (Exception ex)
+            {
+                return this.ToJsonError(ex.Message);
+            }
+        }
+
+        public object Update(string authorization, string options)
+        {
+            try
+            {
+                var inputType = new
+                {
+                    address = "",
+                    id = 0
+                };
+
+                //<ts-auto-generated>
+                if (string.IsNullOrEmpty(authorization) && string.IsNullOrEmpty(options))
+                {
+                    var outputType = new
+                    {
+                        ok = false,
+                        message = ""
+                    };
+
+                    return new { inputType, outputType };
+                }
+
+                var input = JsonConvert.DeserializeAnonymousType(options, inputType);
+                SecurityToken token = new SecurityToken("admin");
+
+                BDBuildingData data = BDBuildingWrapper.GetByAddress1(input.address, token);
+                if (data == null)
+                {
+                    return this.ToJsonError("The address does not exist.");
+                }
+
+                data.BuildingID = input.id;
+
+                Result result = BDBuildingWrapper.Save(data, token);
+                if (result.OK)
+                {
+                    return new
+                    {
+                        ok = true,
+                        message = "OK"
+                    };
+                }
+
+                return new
+                {
+                    ok = false,
+                    message = result.Error
+                };
+            }
+            catch (Exception ex)
+            {
+                return this.ToJsonError(ex.Message);
+            }
+        }
+
+        public object InsertWithChildren(string authorization, string options)
+        {
+            try
+            {
+                var inputType = new
+                {
+                    address = "",
+                    tenantList = new[]
+                    {
+                        new
+                        {
+                            tenantName = "",
+                            suite = ""
+                        }
+                    }
+                };
+
+                //<ts-auto-generated>
+                if (string.IsNullOrEmpty(authorization) && string.IsNullOrEmpty(options))
+                {
+                    var outputType = new
+                    {
+                        ok = false,
+                        message = ""
+                    };
+
+                    return new { inputType, outputType };
+                }
+
+                var input = JsonConvert.DeserializeAnonymousType(options, inputType);
+                SecurityToken token = new SecurityToken("admin");
+
+                BDBuildingData data = BDBuildingWrapper.GetByAddress1(input.address, token);
+                if (data == null)
+                {
+                    data = new BDBuildingData();
+                    data.Address1 = input.address;
+                    data.BuildingID = new Random().Next(1000, 99999);
+                }
+
+                data.BDTenantList = new BDTenantDataCollection();
+                foreach (var item in input.tenantList)
+                {
+                    BDTenantData tenant = new BDTenantData();
+                    tenant.Tenant = item.tenantName;
+                    tenant.Suite = item.suite;
+                    tenant.BDBuildingPK = data.BDBuildingPK;
+
+                    data.BDTenantList.Add(tenant);
+                }
+
+                Result result = BDBuildingWrapper.Save(data, token);
+                if (result.OK)
+                {
+                    return new
+                    {
+                        ok = true,
+                        message = "OK"
+                    };
+                }
+
+                return new
+                {
+                    ok = false,
+                    message = result.Error
+                };
             }
             catch (Exception ex)
             {

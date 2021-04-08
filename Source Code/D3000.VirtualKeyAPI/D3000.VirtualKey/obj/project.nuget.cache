@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3Sbn06Yjdf0NW9ALc8AbpWV+KVkDrloXm//GqtAOnesM5m5pqKsde37LLNcqFxnFYJf9Ty4A+f58NhOm3MmGTw==",
+  "dgSpecHash": "g3Np/hXMdGXJUQtF6Zr7TMw8P5bqzPqnlcLSbfk3OGN6KUwycnm6+lWWIu6FjZRoLJyJ6+Gi7zol8PptyCSoEw==",
   "success": true,
-  "projectFilePath": "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj",
+  "projectFilePath": "D:\\Work\\Projects\\D3000\\D3000_API_TEST\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chulaiguo\\.nuget\\packages\\d3000.data\\1.0.0\\d3000.data.1.0.0.nupkg.sha512",
     "C:\\Users\\chulaiguo\\.nuget\\packages\\d3000.dataservice\\1.0.0\\d3000.dataservice.1.0.0.nupkg.sha512",

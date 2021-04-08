@@ -1,6 +1,5 @@
 using System;
 using D3000.DataService;
-using Newtonsoft.Json;
 
 namespace D3000.VirtualKey
 {
@@ -11,15 +10,13 @@ namespace D3000.VirtualKey
             return UsrAccountBuildingMapWrapper.Now();
         }
 
-        protected string ToJsonError(string error)
+        protected object ToJsonError(string error)
         {
-            var entity = new
+            return new
             {
                 ok = false,
                 message = error
             };
-
-            return JsonConvert.SerializeObject(entity);
         }
 
         //public static string AccessToken

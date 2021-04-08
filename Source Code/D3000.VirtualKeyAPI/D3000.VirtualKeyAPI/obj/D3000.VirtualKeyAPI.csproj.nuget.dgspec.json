@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI.csproj": {}
+    "D:\\Work\\Projects\\D3000\\D3000_API_TEST\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI.csproj": {}
   },
   "projects": {
-    "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI.csproj": {
+    "D:\\Work\\Projects\\D3000\\D3000_API_TEST\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI.csproj",
+        "projectUniqueName": "D:\\Work\\Projects\\D3000\\D3000_API_TEST\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI.csproj",
         "projectName": "D3000.VirtualKeyAPI",
-        "projectPath": "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI.csproj",
+        "projectPath": "D:\\Work\\Projects\\D3000\\D3000_API_TEST\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI.csproj",
         "packagesPath": "C:\\Users\\chulaiguo\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI\\obj\\",
+        "outputPath": "D:\\Work\\Projects\\D3000\\D3000_API_TEST\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chulaiguo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -30,8 +30,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj": {
-                "projectPath": "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj"
+              "D:\\Work\\Projects\\D3000\\D3000_API_TEST\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj": {
+                "projectPath": "D:\\Work\\Projects\\D3000\\D3000_API_TEST\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj": {
+    "D:\\Work\\Projects\\D3000\\D3000_API_TEST\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj",
+        "projectUniqueName": "D:\\Work\\Projects\\D3000\\D3000_API_TEST\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj",
         "projectName": "D3000.VirtualKey",
-        "projectPath": "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj",
+        "projectPath": "D:\\Work\\Projects\\D3000\\D3000_API_TEST\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj",
         "packagesPath": "C:\\Users\\chulaiguo\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\obj\\",
+        "outputPath": "D:\\Work\\Projects\\D3000\\D3000_API_TEST\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chulaiguo\\AppData\\Roaming\\NuGet\\NuGet.Config",
