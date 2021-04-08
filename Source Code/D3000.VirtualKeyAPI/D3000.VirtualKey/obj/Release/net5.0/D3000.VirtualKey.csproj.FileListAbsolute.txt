@@ -1,0 +1,12 @@
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKey\bin\Release\net5.0\D3000.VirtualKey.deps.json
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKey\bin\Release\net5.0\D3000.VirtualKey.dll
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKey\bin\Release\net5.0\ref\D3000.VirtualKey.dll
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKey\bin\Release\net5.0\D3000.VirtualKey.pdb
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKey\obj\Release\net5.0\D3000.VirtualKey.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKey\obj\Release\net5.0\D3000.VirtualKey.AssemblyInfoInputs.cache
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKey\obj\Release\net5.0\D3000.VirtualKey.AssemblyInfo.cs
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKey\obj\Release\net5.0\D3000.VirtualKey.csproj.CoreCompileInputs.cache
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKey\obj\Release\net5.0\D3000.VirtualKey.dll
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKey\obj\Release\net5.0\ref\D3000.VirtualKey.dll
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKey\obj\Release\net5.0\D3000.VirtualKey.pdb
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKey\obj\Release\net5.0\D3000.VirtualKey.csprojAssemblyReference.cache

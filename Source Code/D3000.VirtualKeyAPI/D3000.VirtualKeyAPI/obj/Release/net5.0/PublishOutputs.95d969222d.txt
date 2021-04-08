@@ -1,0 +1,17 @@
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\D3000.VirtualKeyAPI.exe
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\appsettings.Development.json
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\appsettings.json
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\D3000.VirtualKeyAPI.dll
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\D3000.VirtualKeyAPI.deps.json
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\D3000.VirtualKeyAPI.runtimeconfig.json
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\D3000.VirtualKeyAPI.pdb
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\D3000.Data.dll
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\D3000.DataService.dll
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\D3000.DataServiceBase.dll
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\Jet.Data.dll
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\Jet.DataServiceBase.dll
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\Jet.NpgAccess.dll
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\Newtonsoft.Json.dll
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\Npgsql.dll
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\D3000.VirtualKey.dll
+D:\Work\Projects\D3000_V2\D3000_API_XXX\Source Code\D3000.VirtualKeyAPI\D3000.VirtualKeyAPI\bin\Release\net5.0\publish\D3000.VirtualKey.pdb

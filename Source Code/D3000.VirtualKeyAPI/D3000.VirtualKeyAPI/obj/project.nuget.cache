@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "BqbSpWW4OR3LxoGMl/h14ZsAQK4j4Eviv9hZ1wFmkQvBeYRqOzbigJsZkjmP3WyzLAqjbqDyscbeq1v+QLGUNg==",
+  "success": true,
+  "projectFilePath": "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chulaiguo\\.nuget\\packages\\d3000.data\\1.0.0\\d3000.data.1.0.0.nupkg.sha512",
+    "C:\\Users\\chulaiguo\\.nuget\\packages\\d3000.dataservice\\1.0.0\\d3000.dataservice.1.0.0.nupkg.sha512",
+    "C:\\Users\\chulaiguo\\.nuget\\packages\\d3000.dataservicebase\\1.0.0\\d3000.dataservicebase.1.0.0.nupkg.sha512",
+    "C:\\Users\\chulaiguo\\.nuget\\packages\\jet.data\\1.0.0\\jet.data.1.0.0.nupkg.sha512",
+    "C:\\Users\\chulaiguo\\.nuget\\packages\\jet.dataservicebase\\1.0.0\\jet.dataservicebase.1.0.0.nupkg.sha512",
+    "C:\\Users\\chulaiguo\\.nuget\\packages\\jet.npgaccess\\1.0.0\\jet.npgaccess.1.0.0.nupkg.sha512",
+    "C:\\Users\\chulaiguo\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512",
+    "C:\\Users\\chulaiguo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\chulaiguo\\.nuget\\packages\\npgsql\\5.0.4\\npgsql.5.0.4.nupkg.sha512",
+    "C:\\Users\\chulaiguo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,17 @@
+D:\app\publish\D3000.VirtualKeyAPI.exe
+D:\app\publish\appsettings.Development.json
+D:\app\publish\appsettings.json
+D:\app\publish\D3000.VirtualKeyAPI.dll
+D:\app\publish\D3000.VirtualKeyAPI.deps.json
+D:\app\publish\D3000.VirtualKeyAPI.runtimeconfig.json
+D:\app\publish\D3000.VirtualKeyAPI.pdb
+D:\app\publish\D3000.Data.dll
+D:\app\publish\D3000.DataService.dll
+D:\app\publish\D3000.DataServiceBase.dll
+D:\app\publish\Jet.Data.dll
+D:\app\publish\Jet.DataServiceBase.dll
+D:\app\publish\Jet.NpgAccess.dll
+D:\app\publish\Newtonsoft.Json.dll
+D:\app\publish\Npgsql.dll
+D:\app\publish\D3000.VirtualKey.dll
+D:\app\publish\D3000.VirtualKey.pdb

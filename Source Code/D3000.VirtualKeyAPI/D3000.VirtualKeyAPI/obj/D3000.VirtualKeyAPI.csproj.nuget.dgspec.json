@@ -1,0 +1,143 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI.csproj": {}
+  },
+  "projects": {
+    "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI.csproj",
+        "projectName": "D3000.VirtualKeyAPI",
+        "projectPath": "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI.csproj",
+        "packagesPath": "C:\\Users\\chulaiguo\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKeyAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\chulaiguo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Work\\JetCode\\JetBase\\Packages": {},
+          "D:\\Work\\Projects\\D3000_V2\\D3000_DBS_D3000\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj": {
+                "projectPath": "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj",
+        "projectName": "D3000.VirtualKey",
+        "projectPath": "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\D3000.VirtualKey.csproj",
+        "packagesPath": "C:\\Users\\chulaiguo\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\Projects\\D3000_V2\\D3000_API_XXX\\Source Code\\D3000.VirtualKeyAPI\\D3000.VirtualKey\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\chulaiguo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Work\\JetCode\\JetBase\\Packages": {},
+          "D:\\Work\\Projects\\D3000_V2\\D3000_DBS_D3000\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "D3000.DataService": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
