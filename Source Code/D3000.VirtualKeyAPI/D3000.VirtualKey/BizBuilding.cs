@@ -32,7 +32,7 @@ namespace D3000.VirtualKey
                             new
                             {
                                 pk = "00000000-0000-0000-0000-000000000000",
-                                address = ""
+                                address = "4401 east high way"
                             }
                         }
                     };
@@ -74,7 +74,7 @@ namespace D3000.VirtualKey
             {
                 var inputType = new
                 {
-                    address = ""
+                    address = "988 changning"
                 };
 
                 //<ts-auto-generated>
@@ -90,7 +90,7 @@ namespace D3000.VirtualKey
                             new
                             {
                                 pk = "00000000-0000-0000-0000-000000000000",
-                                address = ""
+                                address = "969 hongqiao"
                             }
                         }
                     };
@@ -188,8 +188,8 @@ namespace D3000.VirtualKey
             {
                 var inputType = new
                 {
-                    address = "",
-                    id = 0
+                    address = "4401 east high way",
+                    id = 1000
                 };
 
                 //<ts-auto-generated>
@@ -243,13 +243,13 @@ namespace D3000.VirtualKey
             {
                 var inputType = new
                 {
-                    address = "",
+                    address = "4401 east high way",
                     tenantList = new[]
                     {
                         new
                         {
-                            tenantName = "",
-                            suite = ""
+                            tenantName = "abc",
+                            suite = "101"
                         }
                     }
                 };
