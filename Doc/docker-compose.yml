@@ -1,0 +1,10 @@
+version: "3.4"
+
+services:
+  desktop:
+    image: swaggerapi/swagger-ui
+    container_name: swagger-ui
+    ports:
+      - "8087:8080"
+    volumes:
+      - /d/Work/Projects/D3000/D3000_API_TEST/Doc/swagger-ui:/usr/share/nginx/html/swagger
