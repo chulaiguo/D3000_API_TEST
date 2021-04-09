@@ -12,7 +12,7 @@ namespace D3000.VirtualKeyAPI.Controllers
 		[HttpPost]
 		public IActionResult GetAllList()
 		{
-			var __authorization__ = this.Request.Headers["Authorization"];
+			var __authorization__ = this.Request.Headers["x-auth-token"];
 
 			string __options__;
 			using (var reader = new StreamReader(this.Request.Body))
@@ -25,7 +25,7 @@ namespace D3000.VirtualKeyAPI.Controllers
 		[HttpPost]
 		public IActionResult GetByAddress()
 		{
-			var __authorization__ = this.Request.Headers["Authorization"];
+			var __authorization__ = this.Request.Headers["x-auth-token"];
 
 			string __options__;
 			using (var reader = new StreamReader(this.Request.Body))
@@ -38,7 +38,7 @@ namespace D3000.VirtualKeyAPI.Controllers
 		[HttpPost]
 		public IActionResult Insert()
 		{
-			var __authorization__ = this.Request.Headers["Authorization"];
+			var __authorization__ = this.Request.Headers["x-auth-token"];
 
 			string __options__;
 			using (var reader = new StreamReader(this.Request.Body))
@@ -51,7 +51,7 @@ namespace D3000.VirtualKeyAPI.Controllers
 		[HttpPost]
 		public IActionResult InsertWithChildren()
 		{
-			var __authorization__ = this.Request.Headers["Authorization"];
+			var __authorization__ = this.Request.Headers["x-auth-token"];
 
 			string __options__;
 			using (var reader = new StreamReader(this.Request.Body))
@@ -64,7 +64,7 @@ namespace D3000.VirtualKeyAPI.Controllers
 		[HttpPost]
 		public IActionResult Update()
 		{
-			var __authorization__ = this.Request.Headers["Authorization"];
+			var __authorization__ = this.Request.Headers["x-auth-token"];
 
 			string __options__;
 			using (var reader = new StreamReader(this.Request.Body))

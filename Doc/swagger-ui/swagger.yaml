@@ -1,0 +1,208 @@
+﻿openapi: 3.0.1
+info:
+  title: D3000.VirtualKey, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null API
+  version: 1.0.0
+servers:
+  - url: http://localhost:46814/api
+tags:
+  - name: BizBuilding
+paths:
+  /BizBuilding/GetAllList:
+    post:
+      tags:
+        - BizBuilding
+      parameters:
+        - in: header
+          name: x-auth-token
+          schema: 
+            type: string
+          required: true
+      responses:
+        default:
+          description: successful operation
+          content:
+            '*/*'
+              schema:
+                type: "object"
+                properties:
+                  ok:
+                    type: "boolean"
+                    example: false
+                  message:
+                    type: "string"
+                    example: ""
+                  result:
+                    type: "array"
+                    items:
+                      type: "object"
+                      properties:
+                          pk:
+                            type: "string"
+                            example: "00000000-0000-0000-0000-000000000000"
+                          address:
+                            type: "string"
+                            example: ""
+  /BizBuilding/GetByAddress:
+    post:
+      tags:
+        - BizBuilding
+      parameters:
+        - in: header
+          name: x-auth-token
+          schema: 
+            type: string
+          required: true
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: "object"
+              properties:
+                  address:
+                    type: "string"
+                    example: ""
+        required: true
+      responses:
+        default:
+          description: successful operation
+          content:
+            '*/*'
+              schema:
+                type: "object"
+                properties:
+                  ok:
+                    type: "boolean"
+                    example: false
+                  message:
+                    type: "string"
+                    example: ""
+                  result:
+                    type: "array"
+                    items:
+                      type: "object"
+                      properties:
+                          pk:
+                            type: "string"
+                            example: "00000000-0000-0000-0000-000000000000"
+                          address:
+                            type: "string"
+                            example: ""
+  /BizBuilding/Insert:
+    post:
+      tags:
+        - BizBuilding
+      parameters:
+        - in: header
+          name: x-auth-token
+          schema: 
+            type: string
+          required: true
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: "object"
+              properties:
+                  id:
+                    type: "integer"
+                    example: 0
+                  address:
+                    type: "string"
+                    example: ""
+        required: true
+      responses:
+        default:
+          description: successful operation
+          content:
+            '*/*'
+              schema:
+                type: "object"
+                properties:
+                  ok:
+                    type: "boolean"
+                    example: false
+                  message:
+                    type: "string"
+                    example: ""
+  /BizBuilding/InsertWithChildren:
+    post:
+      tags:
+        - BizBuilding
+      parameters:
+        - in: header
+          name: x-auth-token
+          schema: 
+            type: string
+          required: true
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: "object"
+              properties:
+                  address:
+                    type: "string"
+                    example: ""
+                  tenantList:
+                    type: "array"
+                    items:
+                      type: "object"
+                      properties:
+                          tenantName:
+                            type: "string"
+                            example: ""
+                          suite:
+                            type: "string"
+                            example: ""
+        required: true
+      responses:
+        default:
+          description: successful operation
+          content:
+            '*/*'
+              schema:
+                type: "object"
+                properties:
+                  ok:
+                    type: "boolean"
+                    example: false
+                  message:
+                    type: "string"
+                    example: ""
+  /BizBuilding/Update:
+    post:
+      tags:
+        - BizBuilding
+      parameters:
+        - in: header
+          name: x-auth-token
+          schema: 
+            type: string
+          required: true
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: "object"
+              properties:
+                  address:
+                    type: "string"
+                    example: ""
+                  id:
+                    type: "integer"
+                    example: 0
+        required: true
+      responses:
+        default:
+          description: successful operation
+          content:
+            '*/*'
+              schema:
+                type: "object"
+                properties:
+                  ok:
+                    type: "boolean"
+                    example: false
+                  message:
+                    type: "string"
+                    example: ""
