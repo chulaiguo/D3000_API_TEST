@@ -41,7 +41,8 @@ namespace D3000.VirtualKey
                 }
 
                 //var input = JsonConvert.DeserializeAnonymousType(options, inputType);
-                SecurityToken token = new SecurityToken("admin");
+                UserInfo user = this.CheckAuthorize(authorization);
+                SecurityToken token = new SecurityToken(user.UserId);
 
                 string sql = string.Format("SELECT [{1}], [{2}] FROM [{0}]",
                     BDBuildingSchema.TableName, BDBuildingSchema.BDBuildingPK, BDBuildingSchema.Address1);
@@ -99,8 +100,9 @@ namespace D3000.VirtualKey
                 }
 
                 var input = JsonConvert.DeserializeAnonymousType(options, inputType);
-                SecurityToken token = new SecurityToken("admin");
-                
+                UserInfo user = this.CheckAuthorize(authorization);
+                SecurityToken token = new SecurityToken(user.UserId);
+
                 string sql = string.Format("SELECT [{1}], [{2}] FROM [{0}] WHERE [{2}] ILIKE @{2}",
                     BDBuildingSchema.TableName, BDBuildingSchema.BDBuildingPK, BDBuildingSchema.Address1);
 
@@ -154,7 +156,8 @@ namespace D3000.VirtualKey
                 }
 
                 var input = JsonConvert.DeserializeAnonymousType(options, inputType);
-                SecurityToken token = new SecurityToken("admin");
+                UserInfo user = this.CheckAuthorize(authorization);
+                SecurityToken token = new SecurityToken(user.UserId);
 
                 BDBuildingData data = new BDBuildingData();
                 data.Address1 = input.address;
@@ -205,7 +208,8 @@ namespace D3000.VirtualKey
                 }
 
                 var input = JsonConvert.DeserializeAnonymousType(options, inputType);
-                SecurityToken token = new SecurityToken("admin");
+                UserInfo user = this.CheckAuthorize(authorization);
+                SecurityToken token = new SecurityToken(user.UserId);
 
                 BDBuildingData data = BDBuildingWrapper.GetByAddress1(input.address, token);
                 if (data == null)
@@ -267,7 +271,8 @@ namespace D3000.VirtualKey
                 }
 
                 var input = JsonConvert.DeserializeAnonymousType(options, inputType);
-                SecurityToken token = new SecurityToken("admin");
+                UserInfo user = this.CheckAuthorize(authorization);
+                SecurityToken token = new SecurityToken(user.UserId);
 
                 BDBuildingData data = BDBuildingWrapper.GetByAddress1(input.address, token);
                 if (data == null)

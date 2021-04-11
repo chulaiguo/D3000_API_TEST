@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="D3000.DataService" Version="1.0.0" />
+    <PackageReference Include="JWT" Version="8.1.6" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
